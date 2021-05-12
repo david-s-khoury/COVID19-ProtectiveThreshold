@@ -113,8 +113,5 @@ write.csv(SuppTable_TableOfSDperStudy,"SuppTable_TableOfSDperStudy.csv")
 
 
 
-###Normality of combined distributions
-#Test Normality of combined data
-shapiro.test(CombinedTable_RawNeuts_LOD_centred$CentredTitre[CombinedTable_RawNeuts_LOD_centred$Group=="Vaccine" & CombinedTable_RawNeuts_LOD_centred$TitreLog>log10(CombinedTable_RawNeuts_LOD_centred$LOD)])
 
 
