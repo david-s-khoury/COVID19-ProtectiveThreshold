@@ -49,7 +49,7 @@ for (i in 1:nrow(ListOfEstimatedMeanSDafterCensoring)){
 ListLODtemp<-EfficacyTable$LOD[match(IndividualNeutData_NormalisedbyConv$Study,EfficacyTable$Study)]
 ListLODtemp<-log10(ListLODtemp)-log10(IndividualNeutData_NormalisedbyConv$NeutConv)-IndividualNeutData_NormalisedbyConv$MeanRatio
 names(ListLODtemp)<-NULL
-PooledSDModelFit<-nlm(function(p){Likelihood(p,log10(ListLODtemp),IndividualNeutData_NormalisedbyConv$CentredRatio)},c(mean(IndividualNeutData_NormalisedbyConv$CentredRatio),sd(IndividualNeutData_NormalisedbyConv$CentredRatio)))    
+PooledSDModelFit<-nlm(function(p){Likelihood(p,ListLODtemp,IndividualNeutData_NormalisedbyConv$CentredRatio)},c(mean(IndividualNeutData_NormalisedbyConv$CentredRatio),sd(IndividualNeutData_NormalisedbyConv$CentredRatio)))    
 PooledSD<-PooledSDModelFit$estimate[2]
 
 

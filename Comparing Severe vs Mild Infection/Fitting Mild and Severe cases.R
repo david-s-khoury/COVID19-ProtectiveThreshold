@@ -523,8 +523,8 @@ FittedLogistic_RawEfficacy_MeanCens_SDPool_CI_Diff_All<-c(FittedLogistic_RawEffi
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper<- (sqrt(diag(solve(FittedLogistic_RawEfficacy_MeanCens_SDPool_Diff_EC50_Only$hessian))))*1.96 +(FittedLogistic_RawEfficacy_MeanCens_SDPool_Diff_EC50_Only$estimate)
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower<- -(sqrt(diag(solve(FittedLogistic_RawEfficacy_MeanCens_SDPool_Diff_EC50_Only$hessian))))*1.96 +(FittedLogistic_RawEfficacy_MeanCens_SDPool_Diff_EC50_Only$estimate)
 FittedLogistic_RawEfficacy_MeanCens_SDPool_CI_Diff_EC50_Only<-c(FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[16],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[16],
-                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[16],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[16],
-                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[7],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[7],
+                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[16],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[7],
+                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[7],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[16],
                                                                 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[17],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[17])
 
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper<- (sqrt(diag(solve(FittedLogistic_RawEfficacy_MeanCens_SDPool_Diff_Slope_Only$hessian))))*1.96 +(FittedLogistic_RawEfficacy_MeanCens_SDPool_Diff_Slope_Only$estimate)
@@ -544,8 +544,8 @@ FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Diff_All<-c(FittedLogistic_RawEffi
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper<- (sqrt(diag(solve(FittedLogistic_RawEfficacy_MeanRept_SDPool_Diff_EC50_Only$hessian))))*1.96 +(FittedLogistic_RawEfficacy_MeanRept_SDPool_Diff_EC50_Only$estimate)
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower<- -(sqrt(diag(solve(FittedLogistic_RawEfficacy_MeanRept_SDPool_Diff_EC50_Only$hessian))))*1.96 +(FittedLogistic_RawEfficacy_MeanRept_SDPool_Diff_EC50_Only$estimate)
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Diff_EC50_Only<-c(FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[16],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[16],
-                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[16],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[16],
-                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[7],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[7],
+                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[16],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[7],
+                                                                FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[7],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[16],
                                                                 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Lower[17],FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper[17])
 
 FittedLogistic_RawEfficacy_MeanRept_SDPool_CI_Upper<- (sqrt(diag(solve(FittedLogistic_RawEfficacy_MeanRept_SDPool_Diff_Slope_Only$hessian))))*1.96 +(FittedLogistic_RawEfficacy_MeanRept_SDPool_Diff_Slope_Only$estimate)
